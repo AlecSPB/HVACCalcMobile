@@ -2,6 +2,7 @@ package com.example.hvaccalcmobile;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class KvsActivity extends AppCompatActivity {
 
@@ -11,5 +12,10 @@ public class KvsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_kvs);
 
         setTitle("Расчет Kvs");
+    }
+
+
+    public void getKvs(View view) {
+
     }
 }
