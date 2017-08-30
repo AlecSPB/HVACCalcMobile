@@ -1,4 +1,3 @@
 <resources>
     <string name="app_name">HVACCalcMobile</string>
-    <string name="kvsButtonLabel">Расчет Kvs</string>
 </resources>
