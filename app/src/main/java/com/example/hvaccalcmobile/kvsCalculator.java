@@ -7,26 +7,28 @@ import java.util.HashMap;
  * Created by Чашников Михаил on 30.08.2017.
  */
 
-public class kvsCalculator {
+public class KvsCalculator {
     private double flowRate;                          //кубометры в час
-    private double pressure;                          //Паскали
+    private double pressure;                          //бар
     private double temperature;                       //градусы Цельсия
     private double density;                           //кг на кубометр
     private double kvs;                               //кубометры в час
     private HashMap<Integer, Double> densityTable;    //таблица плотностей воды
 
-    public kvsCalculator(Double flowRate, Double pressure, Double temperature){
+    public KvsCalculator(Double flowRate, Double pressure, Double temperature){
         this.flowRate = flowRate;
         this.pressure = pressure;
         this.temperature = temperature;
 
         getDensityTable();
 
-        this.density = getDensity() * Math.pow(10, 6);
+        this.density = getDensity();
+
+        calculateKvs();
     }
 
     private void calculateKvs(){
-        this.kvs = flowRate * Math.pow((this.density / (1000 * this.pressure)), 0.5);
+        this.kvs = 1.2 * flowRate * Math.pow((this.density / (1000 * this.pressure)), 0.5);
     }
 
     public Double getKvs(){

@@ -7,8 +7,8 @@
     tools:context="com.example.hvaccalcmobile.KvsActivity">
 
     <TextView
-        android:id="@+id/kvsTextView"
-        android:layout_width="wrap_content"
+        android:id="@+id/resultTextView"
+        android:layout_width="241dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
@@ -16,14 +16,14 @@
         android:layout_marginTop="8dp"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.772" />
+        app:layout_constraintVertical_bias="0.767" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/kvsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -74,7 +74,7 @@
         app:layout_constraintHorizontal_bias="0.036" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/pressureEditText"
         android:layout_width="231dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -84,7 +84,7 @@
         android:ems="10"
         android:inputType="number|numberSigned|numberDecimal"
         android:textColorLink="@android:color/holo_blue_dark"
-        android:textSize="14sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -110,7 +110,7 @@
         app:layout_constraintHorizontal_bias="0.035" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/flowRateEditText"
         android:layout_width="231dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -120,7 +120,7 @@
         android:ems="10"
         android:inputType="number|numberSigned|numberDecimal"
         android:textColorLink="@android:color/holo_blue_dark"
-        android:textSize="14sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -139,7 +139,7 @@
         android:ems="10"
         android:inputType="number|numberSigned|numberDecimal"
         android:textColorLink="@android:color/holo_blue_dark"
-        android:textSize="14sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -155,7 +155,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="getKvs"
+        android:onClick="printKvs"
         android:text="Рассчет"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.97"
