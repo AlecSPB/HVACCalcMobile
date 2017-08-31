@@ -11,8 +11,9 @@
     <string name="airTemperature">Температура воздуха, гр. С</string>
     <string name="ductRoughness">Шероховатость воздуховода, мм</string>
     <string name="airVelocity">Скорость, м/с</string>
-    <string name="ductPressureDrop">Падение напора, Па</string>
+    <string name="ductPressureDrop">Падение напора, Па/м</string>
     <string name="printDuctResult">Расчет</string>
     <string name="ductFieldsReset">Сброс</string>
     <string name="ductDiameter">Диаметр воздуховода, м</string>
+    <string name="ductDiameterLabel">Экв. диаметр, м</string>
 </resources>
