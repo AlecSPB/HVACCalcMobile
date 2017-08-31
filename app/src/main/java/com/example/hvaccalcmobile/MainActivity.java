@@ -11,10 +11,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setTitle("Расчеты");
     }
 
     public void showKvsActivity(View view) {
         Intent intent = new Intent(this, KvsActivity.class);
+        startActivity(intent);
+    }
+
+    public void showAirDuctActivity(View view) {
+        Intent intent = new Intent(this, AirDuctActivity.class);
         startActivity(intent);
     }
 }

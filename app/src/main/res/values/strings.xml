@@ -3,4 +3,14 @@
     <string name="kvsButtonLabel">Расчет Kvs</string>
     <string name="flowRateLabel">Расход воды, куб.м/ч</string>
     <string name="pressureLabel">Перепад давления, бар</string>
+    <string name="airDuctButtonLabel">Расчет воздуховодов</string>
+    <string name="airFlowRateLabel">Расход воздуха, куб.м/ч</string>
+    <string name="ductWidth">Ширина воздуховода, м</string>
+    <string name="ductHeight">Высота воздуховода, м</string>
+    <string name="airTemperature">Температура воздуха, гр. С</string>
+    <string name="ductRoughness">Шероховатость воздуховода, мм</string>
+    <string name="airVelocity">Скорость, м/с</string>
+    <string name="ductPressureDrop">Падение напора, Па</string>
+    <string name="printDuctResult">Расчет</string>
+    <string name="ductFieldsReset">Сброс</string>
 </resources>

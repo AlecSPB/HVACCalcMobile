@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".KvsActivity"></activity>
+        <activity android:name=".KvsActivity" />
+        <activity android:name=".AirDuctActivity"></activity>
     </application>
 
 </manifest>
