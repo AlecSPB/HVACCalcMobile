@@ -1,5 +1,6 @@
 package com.example.hvaccalcmobile;
 
+import java.math.*;
 import java.util.*;
 
 /**
@@ -27,12 +28,8 @@ public class AirDuctCalculator {
         this.height = height;
         this.temperature = temperature;
         this.roughness = roughness;
-        this.diameter = (2 * this.width * this.height) / (this.width + this.height);
-        this.velocity = 4 * this.flowRate / (3600 * 3.14 * Math.pow(this.diameter, 2));
-        getDensityTable();
-        getViscosityTable();
-        this.density = getDensity();
-        this.pressureDrop = (calculateLambda() * this.density * Math.pow(this.velocity, 2)) / (this.diameter * 2);
+        calculateDiameter();
+        calculateVelocityAndPressureDrop();
     }
 
     AirDuctCalculator(float flowRate, float diameter, float temperature, float roughness){
@@ -40,11 +37,19 @@ public class AirDuctCalculator {
         this.diameter = diameter;
         this.temperature = temperature;
         this.roughness = roughness;
-        this.velocity = 4 * this.flowRate / (3600 * 3.14 * Math.pow(this.diameter, 2));
+        calculateVelocityAndPressureDrop();
+    }
+
+    private void calculateDiameter(){
+        this.diameter = new BigDecimal(((2 * this.width * this.height) / (this.width + this.height))).setScale(2, RoundingMode.UP).floatValue();
+    }
+
+    private void calculateVelocityAndPressureDrop(){
+        this.velocity = new BigDecimal((4 * this.flowRate / (3600 * 3.14 * Math.pow(this.diameter, 2)))).setScale(2, RoundingMode.UP).doubleValue();
         getDensityTable();
         getViscosityTable();
         this.density = getDensity();
-        this.pressureDrop = (calculateLambda() * this.density * Math.pow(this.velocity, 2)) / (this.diameter * 2);
+        this.pressureDrop = new BigDecimal(((calculateLambda() * this.density * Math.pow(this.velocity, 2)) / (this.diameter * 2))).setScale(2, RoundingMode.UP).doubleValue();
     }
 
     public Float getDiameter() {
