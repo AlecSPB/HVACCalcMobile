@@ -1,5 +1,7 @@
 package com.example.hvaccalcmobile;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -28,7 +30,7 @@ public class KvsCalculator {
     }
 
     private void calculateKvs(){
-        this.kvs = 1.2 * flowRate * Math.pow((this.density / (1000 * this.pressure)), 0.5);
+        this.kvs = new BigDecimal((1.2 * flowRate * Math.pow((this.density / (1000 * this.pressure)), 0.5))).setScale(2, RoundingMode.UP).doubleValue();;
     }
 
     public Double getKvs(){
