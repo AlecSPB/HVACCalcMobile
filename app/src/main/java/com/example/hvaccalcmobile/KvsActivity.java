@@ -67,4 +67,14 @@ public class KvsActivity extends AppCompatActivity {
         }
 
     }
+
+    public void clearFields(View view) {
+        flowRateEditText.setText("");
+        flowRateEditText.requestFocus();
+
+        pressureEditText.setText("");
+        temperatureEditText.setText("");
+
+        resultTextView.setText("");
+    }
 }
