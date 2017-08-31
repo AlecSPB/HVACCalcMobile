@@ -9,7 +9,7 @@
     <Button
         android:id="@+id/buttonKvs"
         android:layout_width="288dp"
-        android:layout_height="83dp"
+        android:layout_height="85dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -20,23 +20,40 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonAirDuctC"
+        app:layout_constraintVertical_bias="0.138" />
 
     <Button
-        android:id="@+id/buttonAirDuct"
+        android:id="@+id/buttonAirDuctR"
         android:layout_width="288dp"
-        android:layout_height="83dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="showAirDuctActivity"
-        android:text="@string/airDuctButtonLabel"
+        android:onClick="showAirDuctRActivity"
+        android:text="@string/airDuctRButtonLabel"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintVertical_bias="0.146" />
+
+    <Button
+        android:id="@+id/buttonAirDuctC"
+        android:layout_width="288dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="showAirDuctCActivity"
+        android:text="@string/airDuctCButtonLabel"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAirDuctR"
+        app:layout_constraintVertical_bias="0.066" />
 </android.support.constraint.ConstraintLayout>

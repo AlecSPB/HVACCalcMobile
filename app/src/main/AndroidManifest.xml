@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".KvsActivity" />
-        <activity android:name=".AirDuctActivity"></activity>
+        <activity android:name=".AirDuctRActivity" />
+        <activity android:name=".AirDuctCActivity"></activity>
     </application>
 
 </manifest>

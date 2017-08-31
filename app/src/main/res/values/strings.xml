@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">HVACCalcMobile</string>
+    <string name="app_name">HVACMobileCalc</string>
     <string name="kvsButtonLabel">Расчет Kvs</string>
     <string name="flowRateLabel">Расход воды, куб.м/ч</string>
     <string name="pressureLabel">Перепад давления, бар</string>
-    <string name="airDuctButtonLabel">Расчет воздуховодов</string>
+    <string name="airDuctRButtonLabel">Расчет прямоугольного воздуховода</string>
+    <string name="airDuctCButtonLabel">Расчет круглого воздуховода</string>
     <string name="airFlowRateLabel">Расход воздуха, куб.м/ч</string>
     <string name="ductWidth">Ширина воздуховода, м</string>
     <string name="ductHeight">Высота воздуховода, м</string>
@@ -13,4 +14,5 @@
     <string name="ductPressureDrop">Падение напора, Па</string>
     <string name="printDuctResult">Расчет</string>
     <string name="ductFieldsReset">Сброс</string>
+    <string name="ductDiameter">Диаметр воздуховода, м</string>
 </resources>

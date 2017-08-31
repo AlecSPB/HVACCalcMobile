@@ -20,8 +20,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void showAirDuctActivity(View view) {
-        Intent intent = new Intent(this, AirDuctActivity.class);
+    public void showAirDuctRActivity(View view) {
+        Intent intent = new Intent(this, AirDuctRActivity.class);
+        startActivity(intent);
+    }
+
+    public void showAirDuctCActivity(View view) {
+        Intent intent = new Intent(this, AirDuctCActivity.class);
         startActivity(intent);
     }
 }
